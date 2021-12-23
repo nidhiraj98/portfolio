@@ -1,0 +1,24 @@
+.background-card {
+    height: fit-content;
+    border-radius: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: auto;
+}
+
+.navbar .mat-button-toggle-group,
+.navbar .mat-button-toggle {
+    border: none;
+    font-weight: bold;
+}
+
+.navbar .mat-button-toggle-checked {
+    background-color: transparent !important;
+    color: var(--color-accent);
+}
