@@ -1,0 +1,22 @@
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.skills-section {
+    background-color: var(--color-accent);
+    border-radius: 0;
+}
+
+.mat-card-title {
+    text-align: center;
+    color: var(--color-white);
+    font-weight: bold;
+
+    font-size: 2rem;
+    margin-top: 20px;
+}

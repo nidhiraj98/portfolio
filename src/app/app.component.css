@@ -1,6 +1,7 @@
 .background-card {
     height: fit-content;
     border-radius: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -8,17 +9,32 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 80%;
+    width: 98%;
+    height: 50px;
     margin: auto;
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: var(--color-white);
 }
 
 .navbar .mat-button-toggle-group,
 .navbar .mat-button-toggle {
     border: none;
     font-weight: bold;
+    background-color: var(--color-white);
 }
 
 .navbar .mat-button-toggle-checked {
     background-color: transparent !important;
     color: var(--color-accent);
+}
+
+.content-section {
+    /* scroll-margin-top: 50px; */
+    padding: 50px 0px;
 }

@@ -6,3 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .navbar .mat-button-toggle-checked .mat-button-toggle-focus-overlay {
     border-bottom: 0 !important;
 }
+
+.source-code {
+    font-family: "Source Code Pro" !important;
+}

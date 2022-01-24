@@ -14,6 +14,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TypewriterComponent } from './typewriter/typewriter.component';
+import { SkillItemComponent } from './skills/skill-item/skill-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ParallaxDirective,
     IntroductionComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    TypewriterComponent,
+    SkillItemComponent
   ],
   imports: [
     BrowserModule,

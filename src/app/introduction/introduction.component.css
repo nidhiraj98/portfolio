@@ -1,0 +1,49 @@
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 50px auto;
+}
+
+.intro-image {
+    width: 30%;
+}
+
+.intro-image > img {
+    height: auto;
+    width: 100%;
+}
+
+.intro-text {
+    width: 70%;
+}
+
+.intro-text .name {
+    font-weight: bold;
+    font-size: 35px;
+
+    height: 45px;
+}
+
+.intro-text .languages {
+    color: var(--color-accent);
+    font-size: 65px;
+    line-height: 65px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.intro-text .languages div {
+    height: 70px;
+    margin: 0 15px 0 0;
+}
+
+.intro-text .about {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+}
