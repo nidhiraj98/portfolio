@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+html {
+    font-size: 10px;
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -9,4 +11,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .source-code {
     font-family: "Source Code Pro" !important;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 8px;
+    }
 }
