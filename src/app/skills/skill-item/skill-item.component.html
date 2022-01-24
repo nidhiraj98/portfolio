@@ -1,6 +1,6 @@
 <div class="container">
     <mat-card class="logo">
-        <img [src]="itemImage">
+        <img [ngClass]="imageSize" [src]="itemImage">
     </mat-card>
     <p class="title">{{itemTitle}}</p>
     <p class="description">{{itemDescription}}</p>

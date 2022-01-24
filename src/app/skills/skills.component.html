@@ -1,6 +1,6 @@
 <mat-card class="skills-section">
     <mat-card-title>SKILLS</mat-card-title>
     <mat-card-content class="skills-container">
-        <app-skill-item *ngFor="let skill of skills" [itemDescription]="skill['description']" [itemImage]="skill['image']" [itemTitle]="skill['title']"></app-skill-item>
+        <app-skill-item *ngFor="let skill of skills" [itemDescription]="skill['description']" [itemImage]="skill['image']" [itemTitle]="skill['title']" [imageSize]="skill['image-size']"></app-skill-item>
     </mat-card-content>
 </mat-card>
