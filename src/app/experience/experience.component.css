@@ -1,0 +1,34 @@
+.experience-section {
+    border-radius: 0;
+    height: 100vh;
+
+    border: none;
+    box-shadow: none !important;
+}
+
+.mat-card-content {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-container {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.mat-card-title {
+    text-align: center;
+    color: var(--color-accent);
+    font-weight: bold;
+
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+app-experience-item {
+    width: 100%;
+}

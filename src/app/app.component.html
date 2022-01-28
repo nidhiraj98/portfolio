@@ -3,6 +3,7 @@
     <mat-button-toggle-group [value]="selectedValue">
       <mat-button-toggle value="about" mat-button color="accent" disableRipple="true" (click)="scrollToSection(aboutSection)">About</mat-button-toggle>
       <mat-button-toggle value="skills" mat-button color="accent" disableRipple="true" (click)="scrollToSection(skillsSection)">Skills</mat-button-toggle>
+      <mat-button-toggle value="experience" mat-button color="accent" disableRipple="true" (click)="scrollToSection(experienceSection)">Experience</mat-button-toggle>
       <mat-button-toggle value="projects" mat-button color="accent" disableRipple="true" (click)="scrollToSection(projectsSection)">Projects</mat-button-toggle>
     </mat-button-toggle-group>
     <mat-slide-toggle *ngIf="false" [formControl]="isDarkMode">Dark Mode</mat-slide-toggle>
@@ -12,6 +13,9 @@
   </div>
   <div class="content-section" #skillsSection>
     <app-skills></app-skills>
+  </div>
+  <div class="content-section" #experienceSection>
+    <app-experience></app-experience>
   </div>
   <div class="content-section" #projectsSection>
     <app-projects></app-projects>

@@ -16,6 +16,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TypewriterComponent } from './typewriter/typewriter.component';
 import { SkillItemComponent } from './skills/skill-item/skill-item.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ExperienceItemComponent } from './experience/experience-item/experience-item.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SkillItemComponent } from './skills/skill-item/skill-item.component';
     ProjectsComponent,
     SkillsComponent,
     TypewriterComponent,
-    SkillItemComponent
+    SkillItemComponent,
+    ExperienceComponent,
+    ExperienceItemComponent
   ],
   imports: [
     BrowserModule,

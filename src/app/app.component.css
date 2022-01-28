@@ -44,6 +44,10 @@
     justify-content: center;
 }
 
+app-experience {
+    width: 100%;
+}
+
 @media screen and (max-width: 500px) {
     .navbar {
         justify-content: center;

@@ -1,0 +1,22 @@
+<div class="experience-item">
+    <div class="company-name">
+        {{experience?.companyName}}
+    </div>
+    <div class="designation-container">
+        <div *ngFor="let role of experience?.roles; let i = index" class="designation">
+            <div [ngClass]="i == 0 ? 'road-map major' : 'road-map minor'">
+                <div class="circle"></div>
+                <div class="vertical-line" *ngIf="!isFirst"></div>
+            </div>
+            <div class="role-details">
+                <div class="role-name">{{role.roleName}}</div>
+                <div class="role-year">{{role.endYear}}</div>
+                <div class="role-description">
+                    <ul [ngClass]="{'invisible-list' : role.description.length > 1}">
+                        <li *ngFor="let description of role.description">{{description}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
