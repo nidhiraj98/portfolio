@@ -37,16 +37,21 @@ export class AppComponent {
     const projectsDiv = this.projectsSection?.nativeElement.getBoundingClientRect();
     const experienceDiv = this.experienceSection?.nativeElement.getBoundingClientRect();
 
-    if(aboutDiv.top >= 0) {
+    // console.log("About Section: ", aboutDiv.top, aboutDiv.bottom);
+    // console.log("Skills Section: ", skillsDiv.top, skillsDiv.bottom);
+    // console.log("Experience Section: ", experienceDiv.top, experienceDiv.bottom);
+    // console.log("Projects Section: ", projectsDiv.top, projectsDiv.bottom);
+
+    if(aboutDiv.top >= 0 || aboutDiv.bottom > 0) {
       this.selectedValue = "about";
     }
-    else if(skillsDiv.top >= 0) {
+    else if(skillsDiv.top >= 0 || skillsDiv.bottom > 0) {
       this.selectedValue = "skills";
     }
-    else if(experienceDiv.top >= 0) {
+    else if(experienceDiv.top >= 0 || experienceDiv.bottom > 0) {
       this.selectedValue = "experience";
     }
-    else if(projectsDiv.top >= 0) {
+    else if(projectsDiv.top >= 0 || projectsDiv.bottom > 0) {
       this.selectedValue = "projects";
     }
   }
