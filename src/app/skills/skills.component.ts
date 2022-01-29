@@ -16,7 +16,7 @@ export class SkillsComponent implements OnInit {
       "image-size": ImageSize.SMALL
     }, {
       "title": "Python",
-      "description": "My major focus at Fidelity Investments was to develop a conversational chatbot for the employees to get their policy related queries answered. The chatbot brain as well as the API service waa coded using Python.",
+      "description": "My major focus at Fidelity Investments was to develop a conversational chatbot for the employees to get their policy related queries answered. The chatbot brain as well as the API service were coded using Python.",
       "image": "assets/images/python.png",
       "image-size": ImageSize.MEDIUM
     }, {

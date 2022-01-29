@@ -1,11 +1,10 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 
-    margin: 30px 20px;
-    height: 100%;
+    padding: 30px 20px;
 }
 
 .logo {
@@ -17,7 +16,7 @@
     align-items: center;
     justify-content: center;
 
-    margin: 15px 0;
+    margin: 15px auto;
 }
 
 .logo>.medium{
@@ -38,7 +37,7 @@
     font-size: 2rem;
 
     text-align: center;
-    margin-top: 5px;
+    margin: 5px auto;
 }
 
 .description {

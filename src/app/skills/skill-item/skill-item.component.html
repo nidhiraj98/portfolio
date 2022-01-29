@@ -1,7 +1,13 @@
 <div class="container">
-    <mat-card class="logo">
-        <img [ngClass]="imageSize" [src]="itemImage">
-    </mat-card>
-    <p class="title">{{itemTitle}}</p>
-    <p class="description">{{itemDescription}}</p>
+    <div>
+        <mat-card class="logo">
+            <img [ngClass]="imageSize" [src]="itemImage">
+        </mat-card>
+        <div class="title">
+            <p>{{itemTitle}}</p>
+        </div>
+    </div>
+    <div>
+        <p class="description">{{itemDescription}}</p>
+    </div>
 </div>
