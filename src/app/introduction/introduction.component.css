@@ -5,10 +5,15 @@
 
     width: 80%;
     margin: auto;
+    min-height: calc(100vh - 32px - 20px);
 }
 
 .intro-image {
     width: 35%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
 }
 
 .intro-image > img {
@@ -53,18 +58,17 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     .intro-container {
         flex-direction: column-reverse;
         width: 100%;
     }
 
     .intro-text {
-        margin-top: 2rem;
-    }
+        width: auto;
+        padding: 20px;
 
-    .intro-text .languages {
-        font-size: 4.5rem;
+        flex-grow: 1;
     }
 
     .intro-text .name {
@@ -72,6 +76,21 @@
     }
     
     .intro-image {
-        width: 40%;
+        flex-grow: 1;
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 700px),
+       screen and (max-height: 600px) {
+    .intro-text .languages {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .intro-text .about {
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 }

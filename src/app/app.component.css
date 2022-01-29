@@ -52,6 +52,10 @@ app-skills {
     min-height: calc(100vh - 32px);
 }
 
+app-introduction {
+    min-height: calc(100vh - 32px);
+}
+
 @media screen and (max-width: 500px) {
     .navbar {
         justify-content: center;
