@@ -13,8 +13,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-family: "Source Code Pro" !important;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     html {
         font-size: 8px;
+    }
+} */
+
+.small-screen {
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .large-screen {
+        display: none;
+    }
+
+    .small-screen {
+        display: initial;
     }
 }

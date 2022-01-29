@@ -3,21 +3,8 @@
     flex-direction: row;
 }
 
-.company-name {
-    width: 40%;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: right;
-    font-style: italic;
-}
-
 .designation-container {
-    width: 60%;
+    width: 100%;
 
     display: flex;
     flex-direction: column-reverse;
@@ -28,8 +15,22 @@
     justify-content: space-evenly;
 }
 
-.road-map {
+.company-name {
     width: 20%;
+    padding-top: 20px;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+}
+
+.company-name.small-screen {
+    font-size: inherit;
+}
+
+.road-map {
+    width: 10%;
 
     display: flex;
     align-items: center;
@@ -37,62 +38,93 @@
     justify-content: flex-start;
 }
 
+.top {
+    height: 20px;
+}
+
+.bottom {
+    flex-grow: 1;
+}
+
 .vertical-line {
     width: 6px;
     background-color: var(--color-accent);
-
-    border-radius: 5px;
-
-    margin: 5px auto;
+    height: 100%;
 }
 
-.minor .vertical-line {
-    height: calc(100% - 10px - 14px - 20px);
+.top .vertical-line {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.major .vertical-line {
-    height: calc(100% - 10px - 24px - 20px);
+.bottom .vertical-line {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.circle {
-    border-radius: 50%;
-
-    margin: 10px auto;
+.circle-container {
+    margin: 10px 0;
 }
 
-.major .circle {
-    background-color: var(--color-accent);
+.major .circle-container {
     height: 20px;
     width: 20px;
 }
 
+.minor .circle-container {
+    height: 15px;
+    width: 15px;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.major .circle {
+    background-color: var(--color-accent);
+}
+
 .minor .circle {
     background-color: transparent;
-    height: 10px;
-    width: 10px;
-
     border: 2px solid var(--color-accent);
+
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
 }
 
 .role-details {
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
 
-    width: 80%;
+    width: 70%;
+    padding-top: 20px;
 }
 
 .role-details .role-name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
 .role-details .role-year {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: grey;
     font-weight: bold;
 }
 
-.invisible-list {
+.role-description {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    font-weight: 300;
+}
+
+.role-description ul {
+    padding-inline-start: 0;
     list-style: none;
+}
+
+.role-description li {
+    margin: 5px 0;
 }

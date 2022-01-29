@@ -13,10 +13,12 @@ export class ExperienceItemComponent implements OnInit {
   @Input()
   isFirst: boolean = false;
 
+  @Input()
+  isLast: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.experience, this.isFirst);
   }
 
 }

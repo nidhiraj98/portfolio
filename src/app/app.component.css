@@ -48,6 +48,10 @@ app-experience {
     width: 100%;
 }
 
+app-skills {
+    min-height: calc(100vh - 32px);
+}
+
 @media screen and (max-width: 500px) {
     .navbar {
         justify-content: center;
